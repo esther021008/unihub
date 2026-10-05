@@ -1,0 +1,650 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    color: black;
+    height: 80px;
+    gap: 300px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+body{
+    padding-top: 70px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "poppins",sans-serif;
+    font-weight: 600;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 10px;
+     transition: width 0.3s ease;
+}
+
+.list li a::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background:rgba(1, 154, 79, 88);
+    transition: width 0.3s ease;
+}
+.list li a:hover::after{
+    width: 100%;
+    /* color:rgba(1, 154, 79, 88); */
+}
+.list li a:hover{
+    color:rgba(2, 199, 102, 1);
+}
+.list li a.active{
+    color:rgba(2, 199, 102, 1);
+}
+.list li a.active::after{
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 90px;
+    padding-bottom: 5px;
+}
+.logotext{
+    margin-left: 15px; 
+}
+.uni{
+    display: flex;
+    gap: 2px;
+    font-family: "prociono",serif;
+}
+.hub{
+    color: rgba(6, 38, 74, 1);
+    font-size: 35px;
+    font-weight: 200;
+}
+.hub1{
+    color:rgba(0, 152, 77, 1);
+    font-size: 35px;
+     font-weight: 200;
+}
+.p{
+    font-family: "poppins",sans-serif;
+}
+.hero{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ),
+        url(images/Group\ 7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 401px;
+}
+.hero p{
+    padding: 10px 0px;
+}
+.title{
+    padding: 50px ;
+    color: white;
+    font-family: "poppins",sans-serif;
+}
+.title p{
+    font-weight: 600;
+}
+.title h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 800;
+}
+.every{
+    display: flex;
+    gap: 10px;
+}
+.verse{
+    color:rgba(1, 154, 79, 88) ;
+}
+.box{
+    border: 1px transparent solid;
+    background-color: white;
+    margin: 35px 260px;
+    border-radius: 15px;
+    width: 1019px;
+    height: 100px;
+    box-shadow: 0 0 5px ;
+    font-family: "poppins",sans-serif;
+    display: flex;
+    justify-content: space-around;
+    gap: 9px;
+}
+.line{
+    padding-left: 70px;
+}
+.university{
+    display: flex;
+    align-items: center;
+    /* padding-left: 20px; */
+    gap: 15px;
+    padding: 20px;
+}
+.university p{
+    line-height: 1px;
+
+}
+.num{
+    font-weight: bold;
+    font-size: 20px;
+}
+.light{
+    font-weight: lighter;
+    color: black;
+    font-size: 15px;
+}
+.explore{
+    color:rgba(1, 154, 79, 88) ;
+    font-family: "poppins",sans-serif;
+    text-align: center;
+    padding-top: 65px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.discover{
+    text-align: center;
+    padding-top: 1px;
+    font-size: 30px;
+     font-family: "poppins",sans-serif;
+     font-weight: 700;
+}
+.linecap{
+    display: flex;
+    /* justify-content: space-around; */
+    /* text-align: center; */
+    margin-left: 670px;
+    gap: 400px;
+    padding: 2px 0px;
+}
+.view {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    color:rgba(0, 152, 77, 1) ;
+    border: 1px solid rgba(0, 152, 77, 1)  ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.view a{
+    color:rgba(0, 152, 77, 1) ;
+    text-decoration: none;
+    font-family: "poppins",sans-serif;
+    font-size: 13px;
+}
+.arrow{
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+.info{
+    color: rgba(108, 108, 108, 1);
+    /* text-align: center; */
+    padding-top: 0px ;
+    margin-left: 520px;
+}
+.unisections{
+    display: flex;
+    padding-top: 15px;
+    margin: 0px 60px;
+    gap: 25px;
+}
+.unisection{
+    padding: 2px 0px 0px 10px ;
+    width: 250px;
+    height: 216px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px ;
+    border: white;
+}
+.iconimage{
+    display: flex;
+    padding: 0px 0px 0px 0px ;
+    gap: 9px;
+}
+.unisection h1{
+    font-family: "poppins",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.unisection p{
+    padding-top: 8px;
+}
+.views{
+    color:rgba(0, 152, 77, 1) ;
+    display: flex;
+    gap: 15px;
+}
+.views a{
+    color:rgba(0, 152, 77, 1) ;
+    text-decoration: none;
+    font-family: "poppins",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.arrows{
+    padding-top: 8px;
+}
+
+.footer{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ),
+        url(images/Rectangle\ 57.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    height: 44px;
+    color: white;
+     font-family: "poppins",sans-serif;
+}
+.develop{
+    display: flex;
+    gap: 850px;
+    padding: 10px;
+    margin-left: 50px;
+}
+.right{
+    display: flex;
+    gap: 8px;
+}
+.reserve{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* university section */
+.hero3{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ),
+        url(images/Group\ 14.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 234px;
+}
+.home{
+    display: flex;
+    gap: 15px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.homearrow{
+    padding-top: 2px;
+    padding-right: 5px;
+}
+.homeuni{
+    padding-top: 3px;
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-weight: lighter;
+}
+.success{
+    display: flex;
+    color: white;
+    padding-left: 40px;
+    gap: 500px;
+    font-family: "poppins",sans-serif;
+    padding-top: 0px;
+}
+.journey h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+.journey p{
+    font-weight: 200;
+    font-size: 16px;
+}
+.institution{
+    display: flex;
+    background-color: rgba(10, 43, 78, 1);
+    border: rgba(88, 112, 129, 1) 1px solid;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 360px;
+    height: 144px;
+}
+.public img{
+    padding-left: 40px;
+}
+.public h1{
+    padding-left: 48px;
+    font-size: 16px;
+}
+.public p{
+    padding-left: 20px;
+    font-weight: 200;
+}
+.private img{
+    padding-left: 40px;
+}
+.private h1{
+    padding-left: 5px;
+    font-size: 16px;
+}
+.private p{
+    padding-left: 22px;
+    font-weight: 200;
+}
+.show{
+    display: flex;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 30px;
+    gap: 5px;
+    font-weight: 600;
+    font-family: "poppins",sans-serif;
+
+}
+.show h1{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(1, 154, 79, 1);
+    font-family: "poppins",sans-serif;
+}
+
+.unisectios{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 15px;
+    margin: 0px 60px;
+    gap: 35px 45px;
+}
+
+.unisectio{
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 1px ;
+    border: white;
+     font-family: "poppins",sans-serif;
+}
+
+.unisectio h1{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "poppins",sans-serif;
+    padding-top: 5px;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px 0px 0px;
+    color: rgba(108, 108, 108, 1);
+}
+.location img{
+    padding-top: 4px;
+}
+
+.unp{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.vies{
+    color:rgba(0, 152, 77, 1) ;
+    display: flex;
+    gap: 10px;
+    padding: 20px 95px;
+}
+
+.vies a{
+    color:rgba(0, 152, 77, 1) ;
+    text-decoration: none;
+    font-family: "poppins",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* news section */
+.hero5{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ),
+        url(images/Group\ 15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 306px;
+}
+.hero6{
+    font-family: "poppins",sans-serif;
+}
+.newsevent{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-size: 88px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+.stay{
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    padding-left: 40px;
+    font-weight: 100;
+}
+
+.latest{
+    display: flex;
+    gap: 520px;
+    padding: 20px 0px 0px 30px;
+}
+.latestnews{
+    display: flex;
+    gap: 15px;
+}
+
+.lat{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.in{
+    color: rgba(108, 108, 108, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.event{
+    display: flex;
+    gap: 15px;
+}
+.event p{
+    padding-top: 11px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.new{
+    padding: 20px 0px 0px 20px;
+    display: flex;
+    gap: 50px;
+}
+.adm{
+    width: 319px;
+    height: 347px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px ;
+}
+
+.calender{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    color: rgba(108, 108, 108, 1);
+    font-size: 12px;
+}
+
+.portal{
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.app{
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.readmore{
+    color: rgba(0, 178, 90, 1);
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.arr{
+    padding-top: 4px;
+}
+
+.newsorevent{
+    display: flex;
+    gap: 50px;
+}
+.even{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.upcoming{
+     border-radius: 15px;
+    box-shadow: 0 0 1px ;
+    width: 373px;
+    height: 100px;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+    gap: 10px;
+}
+.works{
+    color: rgba(0, 152, 77, 1);
+    font-size: 13px;
+    font-weight: bold;
+}
+.digi{
+    font-size: 13px;
+    font-weight: bold;
+}
+.audi{
+    display: flex;
+    gap: 10px;
+    padding-top: 3px;
+    color: rgba(108, 108, 108, 1);
+    font-size: 13px;
+}
+
+.rium{
+    padding-top: 4px;
+}
+
+/* contact section */
+.hero7{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        ),
+        url(images/Group\ 15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 255px;
+    font-family: "poppins",sans-serif;
+}
+
+.conus{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 14px;
+    padding-left: 30px;
+}
+.us{
+    color: rgba(2, 199, 102, 1);
+}
+
+.have{
+    color: rgba(255, 255, 255, 1);
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.hero8{
+    padding-top: 20px;
+    font-family: "poppins",sans-serif;
+}
+
+.touchmessage{
+    display: flex;
+    gap: 25px;
+}
+.touch{
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+
+}
+
+.getin{
+    color: rgba(2, 199, 102, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.message{
+     box-shadow: 0 0 1px ;
+     border-radius: 15px;
+     width: 761px;
+     height: 562px;
+}
