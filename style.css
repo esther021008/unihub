@@ -42,7 +42,7 @@ body{
     bottom: 0;
     width: 0;
     height: 3px;
-    background:rgba(1, 154, 79, 88);
+    background:rgba(2, 199, 102, 1);
     transition: width 0.3s ease;
 }
 .list li a:hover::after{
@@ -642,9 +642,79 @@ body{
     font-size: 20px;
 }
 
+.get h1{
+    color: rgba(6, 38, 74, 1);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.whether{
+    color: rgba(108, 108, 108, 1);
+    font-size: 16px;
+}
+
+.email{
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+}
+.emailus{
+    padding-top: 8px;
+}
+
+.emailus h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.emailus p{
+    color: rgba(108, 108, 108, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .message{
      box-shadow: 0 0 1px ;
      border-radius: 15px;
-     width: 761px;
-     height: 562px;
+     width: 740px;
+     height: 540px;
+}
+
+.send{
+    display: flex;
+    padding: 15px 0px 0px 50px;
+    gap: 20px;
+}
+
+.usa{
+    color: rgba(2, 199, 102, 1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sendus{
+    line-height: 40px;
+}
+
+.fill{
+    color: rgba(108, 108, 108, 1);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.sendus h1{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.naph{
+    display: flex;
+    gap: 160px;
+}
+
+.input1{
+    width: 200px;
 }
